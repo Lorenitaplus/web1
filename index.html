@@ -1,68 +1,114 @@
 <!DOCTYPE html>
 <html lang="es" dir="LTR">
-<head>
-	<meta charset="utf-8" />
-	<meta description="Web del curso IFD0110. Confección y publicación de páginas web. Aprende html5, css ,  javascript con nosotros. Somos los mejores." />
-	<title> IFCD0110 </title>
-</head>
-<body>
-	<header>
-		 <a href="index.html" title="Página principal">
-		 	<img src="images/lenguajes_1a" title="páginaprincipal" alt="imagen de html" />
+	<!-- Cabecera oculta del documento web -->
+	<head>
+		<meta charset="utf-8"/>
+		<meta description="Web del curso IFD0110. Confección y publicación de páginas web. Aprende html5, css ,  javascript con nosotros. Somos los mejores."/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="Index, Follow" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/application.css" />
+    	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXX-n"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-XXXX-n');
+        </script>
+		
+   		<!-- Título de la pestaña -->
+		<title> IFCD0110 </title>
+	</head>
+	<!-- Cuerpo visible del documento web -->
+	<body>
+		<header>
+		 	<a href="index.html" title="Página principal">
+		 	<img src="../images/logo1.png" title="página principal" alt="logo de página" width="200" height="101"/>
                 <figure class="logo" style="background-image:url(/assets/svg/logo.svg);"></figure>
                 <h1>EJERCICIO HTML</h1>
             </a>
-            <p class="pechado">Slogan del sitio web</p>
-	</header>
-	<nav> 
-            <p class="pechado">probando html</p>
-	</header>
-	<nav>
-		<h2 class= "pechado">Menu principal</h2>
-		<ul>
-			<li>
-				<a href="index.html">Inicio</a>
-			</li>
-			<li> Categories
-				<ul>
-					<li>
-				    	<a href="html5.html">HTML5</a>
-					</li>
-					<li>
-						<a href="css.html">CSS</a>
-					</li>
-					<li>
-						<a href="js.html">Javascript</a>
-					</li>
-				</ul>
+            <p class="pechado">Slogan MI PRIMERA WEB </p>
+		</header>
+    	<!-- Menú de navegación principal del sitio-->
+		<nav>  
+			<h2 class= "pechado">Menu principal</h2>
+			<ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li> 
+                	<a href="index.html">Categorias</a>
+					<ul>
+						<li>
+			    			<a href="html5.html">HTML5</a>
+						</li>
+						<li>
+							<a href="css.html">CSS</a>
+						</li>
+						<li>
+							<a href="js.html">Javascript</a>
+						</li>
+					</ul>
 			
-			<li> Contactos
-				<a href="pages/nosotros.html">Nosotros</a>
-			</li>
-			<li>
-				<a href="pages/contacto.html">Contactos</a>
-			</li>
-               </ul>
-        </nav>
-        <!-- Contenido principal de la página web -->
-        <main>
-            <section>
-                <h2>Título de la sección</h2>
+				</li> 
+                <li>
+                    <a href="pages/servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="pages/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="pages/contacto.html">Contactos</a>
+                </li>
+
+            </ul>
+		</nav>
+		<!-- Contenido principal de la página web -->	
+		<main>
+			<section>
+				<h2>Título de la sección EJERCICIOS</h2>
                 <article>
-                    <h3>Título del artículo</h3>
-                    <p>Párrafo 1</p>
-                    <p>Párrafo 2</p>
+                    <h3>Título ELEMENTOS DE PROGRAMACIÓN</h3>
+
+                    <p> JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+
+                    <p> HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.</p>
+
+                    <p> CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</p>
+
                 </article>
+
                 <article>
-                    <h3>Título del artículo</h3>
-                    <p>Párrafo 1</p>
-                    <p>Párrafo 2</p>
-                </article>
-                <!-- Pie de la sección -->
-                <footer></footer>
+                    <h3>Título PRUEBA DE IMAGENES</h3>
+
+                    <figure">
+						<img src="../images/logo1.png" title="logo1" alt="imagen de logo1" width="500" height="253"/>
+					</figure">
+
+					<figure">
+						<img src="../images/logo2.png" title="logo2" alt="imagen de logo2" width="300" height="152"/>
+					</figure">
+
+					<figure">
+						<img src="../images/logo3.png" title="logo3" alt="imagen de logo3" width="200" height="101"/>
+					</figure">
+
+				</article>
+
+				<article>
+					<h3>Título MARCADO DE VÍDEOS</h3>
+
+
+
+				</article>
+
+			<!-- Pie de la sección -->
+            <footer></footer>
             </section>
             <aside>
-                <h2>Título de la barra lateral</h2>
+            	<h2>Título de la barra lateral</h2>
                 <nav>
                     <ul>
                         <li><a href="#">Ir al artículo 1</a></li>
@@ -78,16 +124,11 @@
     </body>
 </html>
 
+
+
+
+
+
+
+
 			
-			
-			
-			
-	
-	
-	
-
-
-	
-
-
-
