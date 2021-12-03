@@ -17,6 +17,15 @@
 
             gtag('config', 'UA-XXXX-n');
         </script>
+        <style>
+			table{border-collapse:collapse;
+				caption-side: bottom;}
+			caption{font-weight:bold;
+				margin-top:16px;}
+			th,td{padding:5px 10px;}
+			td,th{border:1px solid #1c1c1c;text-align:center;}
+		</style>
+
    		<!-- Título de la pestaña -->
 		<title> IFCD0110 </title>
 	</head>
@@ -24,7 +33,7 @@
 	<body>
 		<header>
 		 	<a href="index.html" title="Página principal">
-		 	<img src="../images/logo1.png" title="página principal" alt="logo de página" width="200" height="101"/>
+		 	<img src="images/logo1.png" title="página principal" alt="logo de página" width="200" height="101"/>
                 <figure class="logo" style="background-image:url(/assets/svg/logo.svg);"></figure>
                 <h1>EJERCICIO HTML</h1>
             </a>
@@ -61,7 +70,6 @@
                 <li>
                     <a href="pages/contacto.html">Contactos</a>
                 </li>
-
             </ul>
 		</nav>
 		<!-- Contenido principal de la página web -->	
@@ -82,46 +90,83 @@
                 <article> 
                 	<h3>Listas de definiciones</h3>
 
-                	<ol>
-                		<li>HTLM5</li>
-                		<li>CSS</li>
-                		<li>JAVASCRIPT</li>
-                	</ol>
+                	    <dl>
+                	        <dt>HTML</dt>
+                	        <dd>Lenguaje de marcado de texto</dd>
+                			<dt>CSS</dt>
+                			<dd>Hojas de estilo en cascada</dd>
+                			<dt>JS</dt>
+                			<dd>Lenguaje de Script</dd>
+                		</dl>
 
-                	<dl>
-                		<dt>HTML</dt><dd>Lenguaje de marcado de texto</dd>
-                		<dt>CSS</dt><dd>Hojas de estilo en cascada</dd>
-                		<dt>JS</dt><dd>Lenguaje de Script</dd>
-                	</dl>
-
+        		<article>
+                    
                 	<h4>Tablas</h4>
+                	
                 	  	<table>
-        					<tr>Html CCS Javascript</tr>
-    						<tr>Difícil Fácil Imposible</tr>
-        					<tr>Uno Dos Tres</tr>
+                	  			<caption>Tabla de contenidos</caption>
 
-        				</table>
+                	  			<thead>
+        								<tr>
+    										<th>Ciudad</th>
+        									<th>Aeropuerto</th>
+        									<th>Playa</th>
+        									<th>Habitantes</th>
+										</tr>
+								</thead>
+								<tbody>
+										<tr>
+											<th>Reus</th>
+											<th>Sí</th>
+											<th>No</th>
+											<th>100000</th>
+										</tr>
 
-                </article>
+										<tr>
+											<th>Tarragona</th>
+											<th>No</th>
+											<th>Sí</th>
+											<th>130000</th>
+										</tr>
+
+										<tr>
+											<th>Madrid</th>
+											<th>Sí</th>
+											<th>No</th>
+											<th>3100000</th>
+										</tr>
+
+										<tr>
+											<th>Barcelona</th>
+											<th>Sí</th>
+											<th>Sí</th>
+											<th>1600000</th>
+										</tr>
+								</tbody>
+						</table>
+				</article>
+					
                     <h3>Título PRUEBA DE IMAGENES</h3>
 
                     <figure>
-						<img src="../images/logo1.png" title="logo1" alt="imagen de logo1" width="500" height="253"/>
+						<img src="images/logo1.png" title="logo1" alt="imagen de logo1" width="500" height="253"/>
 					</figure>
 
 					<figure>
-						<img src="../images/logo2.png" title="logo2" alt="imagen de logo2" width="300" height="152"/>
+						<img src="images/logo2.png" title="logo2" alt="imagen de logo2" width="300" height="152"/>
 					</figure>
 
 					<figure>
-						<img src="../images/logo3.png" title="logo3" alt="imagen de logo3" width="200" height="101"/>
+						<img src="images/logo3.png" title="logo3" alt="imagen de logo3" width="200" height="101"/>
 					</figure>
 				
 				<article>
 					<h3>Título MARCADO DE VÍDEOS</h3>
 
+					<video width="" height=""> 
+						<source src="" type=""/>
 
-
+					</video>
 				</article>
 
 			<!-- Pie de la sección -->
@@ -146,9 +191,3 @@
 
 
 
-
-
-
-
-
-			
