@@ -1,232 +1,115 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="es" dir="ltr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Práctica estilos CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+        }
+
+        header h1 {
+            width: 100%;
+            height: 50px;
+            padding: 8px;
+            background-color: gray;
+        }
+
+        nav {
+            border: 1px solid red;
+        }
+
+        article {
+            width: 40%;
+            padding: 10px;
+            margin: 3%;
+            border: 1x solid black;
+        }
+        
+        article p, article p, h2{
+            background-color: white;
+        }
+
+        footer h2 {
+            height: 80px;
+            line-height: 80px;
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <script src=""></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es" dir="LTR">
-<head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="description" content="Apuntes de clases sobre los elementos HTML5 semántico"/>
-	<link rel="stylesheet" type="text/css" href="../css/basicos.css"/>
-	<title>Elementos HTML5</title>
-</head>
-<body>
-	<header>
-		<a href="../index.html" title="Inicio">
-			<figure>
-				<img src="../images/logo1.png" alt="El logo de mi web son los 3 logos de HTML5, CSS3 y Javascript"/>
-			</figure>
-			<h1>Características HTML5 |
-			IFCD0110</h1>
-		</a>
-	</header>
-	<nav>
-		<h2>Menú Principal</h2>
-		<ul>
-			<li>Categories
-				<ul>
-					<li><a href="html5.html" title="Ir a html5"></a>HTML5</li>
-					<li><a href="css.html" title="Ir a css"></a>CSS</li>
-					<li><a href="js.html" title="Ir a Javascript"></a>Javascript</li>
-					<li><a href="loremipsum.html" title="Ir a Loremispum"></a>Loremipsum</li>
-				</ul>	
-			</li>
-			<li>
-				<a href="../pages/nosotros.html">Nosotros</a>
-			</li>
-			<li>
-				<a href="../pages/contactos.html">Contactos</a>
-			</li>
-		</ul>
-	</nav>
-	<main>
-		<section>
-			<h2>Marcado de texto</h2>
-			<article>
-				<h3 id="enfasis">Énfasis</h3>
-				<p>
-					<strong>El elemento em</strong>	
-				</p>
-				<p>
-					Cuando queremos dar énfasis al lenguaje hablado, acentuamos ciertas palabras y así alteramos sutilmente el significado de lo que decimos. <br/>
-					De manera similar, en el lenguaje escrito ponemos palabras en cursiva para destacarlas. Por ejemplo, las dos siguientes frases tienen diferente significado:
-				</p>
-				<p>
-					Me alegro de que no llegues tarde.
-				</p>
-				<p>
-					Me <em>alegro</em> de que no llegues <em>tarde</em>.
-				</p>
-				<p>
-					La primera frase suena aliviada porque la persona no llega tarde. Por el contrario, la segunda suena sarcástica y un tanto pasivo-agresiva, expresa molestia porque la persona ha llegado algo tarde.
-				</p>
-			</article>
+    <header>
+        <h1>Hoja de estilos 1</h1>
+    </header>
+    <nav>
+        <h2>Menú de navegación</h2>
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
 
-			<article>
-				<h3 id="importancia">Importancia</h3>
-				<p>
-					<strong>El elemento strong</strong>
-				</p>
-				<p>
-					Para enfatizar palabras importantes al hablar solemos acentuarlas, y al escribir lo hacemos en estilo negrita. Por ejemplo:
-				</p>
-				<p>
-					Cuento contigo. <strong>
-					¡No llegues tarde!</strong>
-				</p>
-				<p>
-					En HTML usamos el elemento strong (importancia fuerte) para marcar tales expresiones. El documento resulta entonces más útil, y de nuevo los lectores de pantalla reconocen estos elementos y el tono de voz cambia a uno más fuerte.
-				</p>
-			</article>
-
-			<article>
-				<h3 id="elementoshtml">Cite, q y blockquote: plagiando una wiki</h3>
-				<blockquote cite="https://es.wikipedia.org/wiki/House_M._D.">
-					<p>
-						House M. D. ha gozado de la preferencia de la crítica y del público desde su lanzamiento, convirtiéndose en uno de los programas televisivos más vistos en los Estados Unidos y en todo el mundo. Ha recibido diversos reconocimientos y nominaciones, entre los que destacan un premio Peabody, dos Globos de Oro y tres premios Emmy. Fue la serie más vista en 2008, con un promedio de ochenta y dos millones de personas en sesenta y seis países. La sexta temporada comenzó con un episodio de dos horas, el 21 de septiembre de 2009 en Estados Unidos y terminó a principios de junio de 2010.El 8 de febrero de 2012, los productores de la serie,
-					</p>
-				</blockquote>
-
-				<a href="https://es.wikipedia.org/wiki/House_M._D.">
-				<cite>House M.D.</cite> de Wikipedia
-				</a>
-
-				<p>
-					Artículo <cite>House M.D.</cite> de Wikipedia no menciona la cita<q>No hay que ir para atrás ni para darse impulso</q>
-				</p>
-			</article>
-
-			<article>
-				<h3 id="tablas">Tablas</h3>
-				<table>
-					<caption>Tabla:ciudades del mundo</caption>
-					<thead>	
-						<tr>
-							<th>País</th>
-							<th>Capital</th>
-							<th>Otras ciudades</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>España</td>
-							<td>Madrid</td>
-							<td>Lugo,Barcelona,Bilbao,Valencia</td>
-						</tr>
-						<tr>
-							<td>Francia</td>
-							<td>Paris</td>
-							<td>Lyon,Marsella,Toulouse,Nantes</td>
-						</tr>
-						<tr>
-							<td>Portugal</td>
-							<td>Lisboa</td>
-							<td>Oporto y Coimbra</td>
-						</tr>	
-					</tbody>
-				</table>
-				<br>
-				<table>
-					<caption>Tabla superheroes</caption>
-					<thead>
-						<tr>
-							<th>Ranking</th>
-							<th>Superhero</th>
-							<th>No. of studied feasible powers</th>
-							<th>No. of weaknesses</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>#1</td>
-							<td>Superman</td>
-							<td>7</td>
-							<td>1</td>
-						</tr>
-						<tr>
-							<td>#2</td>
-							<td>Wolverline</td>
-							<td>4</td>
-							<td>1</td>
-						</tr>
-						<tr>
-							<td>#3</td>
-							<td>Thor</td>
-							<td>3</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>#4</td>
-							<td>Mystique</td>
-							<td>3</td>
-							<td>1</td>
-						</tr>
-					</tbody>
-				</table>
-
-			</article>
-
-			<article>
-				<h3 id="imagenes">Ejercicio: crea imagen desde url externa</h3>
-
-				<figure>
-					<img src="https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="imagen de un paisaje">
-					<figcaption>Paisaje de leyenda</figcaption>
-				</figure>
-					
-			</article>	
-
-			<article>
-				<h3 id=videos>Ejercicio: crea video</h3>
-
-				<figure>
-					<video src="https://www.w3schools.com/html/mov_bbb.mp4" controls>
-						<p>Su navegador no soporta HTML5. Aquí hay un <a href="https://www.w3schools.com/html/mov_bbb.mp4">vídeo a conejito mariposa</a></p>	
-					</video>
-				</figure>
-			</article>
-
-			<article>
-				<h3>Ejercicio: crea diferentes formatos de video para navegadores que no soportan HTML5 e imagen de portada</h3>
-				<figure>
-					<video width="400" height="400" controls poster="../images/poster.png">
-						<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-						<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-						<source src="https://www.w3schools.com/html/mov_bbb.webm" type="video/webm">
-						<p>Su navegador no soporta vídeo HTML5. Aquí hay un <a href="https://www.w3schools.com/html/mov_bbb.mp4">vídeo a conejito mariposa</a></p>		
-					</video>
-				</figure>
-			</article>
-
-		</section>
-		<aside>
-			<h2>Menú lateral</h2>
-			<nav>
-				<h3>Menú de navegación</h3>
-				<ul>
-					<li><a href="#enfasis">Énfasis</a></li>
-					<li><a href="#importancia">Importancia</a></li>
-					<li><a href="#elementoshtml">Cite, q y blockquote: plagiando una wiki</a></li>
-					<li><a href="#tablas">Tablas</a></li>
-					<li><a href="#imagenes">Imágenes</a></li>
-					<li><a href="#videos">Vídeos, compatibilidad y poster</a></li>
-				</ul>
-			</nav>
-		</aside>	
-	</main>	
-	<footer>
-		<h2>Pié de página</h2>
-		<p>En construcción...</p>
-	</footer>
-</body>
-</html>
+            <li>
+                <a href="pages/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="pages/contacto.html">Contactos</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Lorem 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+            </p>
+        </article>
+        <article>
+            <h2>Lorem 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+            </p>
+        </article>
+            <h2>Lorem 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+            </p>
+        <article>
+            <h2>Lorem 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+            </p>
+        </article>
+        <article>
+            <h2>Lorem 4</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <h2>Pié de página</h2>
+    </footer>
+</body></html>
