@@ -1,43 +1,88 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="">
     <title>Práctica estilos CSS</title>
     <style>
+        /* Selector Universal */
         * {
             margin: 0;
             padding: 0;
             background-color: pink;
         }
+        
+        * {
+            color: red;
+        }
 
+        /* Ésto anula y sustituye al anterior */
+        
+        h1,h2,h3,h4,h5,h6 {
+            color: black;
+        }
+        
+        li, a, p {
+            color: dimgrey; 
+        }
+        
         header h1 {
-            width: 100%;
-            height: 50px;
+            /* La propiedad height establece el alto */
+            height: 50px;s
+            
+            /* La propiedad padding es el relleno */
             padding: 8px;
+            
+            /* La propiedad background-color es el color de fondo */
             background-color: gray;
         }
 
         nav {
+            
+            /* Ésto es un borde de un px, liso en color rojo */
             border: 1px solid red;
         }
 
         article {
+            
+            /* Ésto establece el ancho de todos los article */
             width: 40%;
+            
+            /* Ésto establece el relleno de todos los article */
             padding: 10px;
+            
+            /* Ésto establece el margen de todos los article */
             margin: 3%;
+            
+            /* Ésto establece el borde de todos los article */
             border: 1x solid black;
         }
-        
-        article p, article p, h2{
+
+        article, article p, article h2 {
+            
+            /* Ésto establece el color de fondo en blanco para:*/
+            /* Todos los article*/
+            /* Todos los párrafos herederos de un article */
+            /* Todos los h2 herederos de un article */
             background-color: white;
         }
 
         footer h2 {
+            
+            /* Éto estable<e el alto del footer en 80 px */
             height: 80px;
+            
+            /* Ésto establece el alto de la linea de texto */
+            /* Como le ponemos el mismo que el height */
+            /* Centramos una línea de texto verticalmente */  
             line-height: 80px;
+            
+            /* Ésto establece el relleno del footer en 10 px */
             padding: 10px;
+            
+            /* 
             text-align: center;
             background-color: black;
             color: white;
@@ -65,51 +110,82 @@
         </ul>
     </nav>
     <main>
-        <article>
-            <h2>Lorem 1</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
-            </p>
-        </article>
-        <article>
-            <h2>Lorem 2</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
-            </p>
-        </article>
-            <h2>Lorem 2</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
-            </p>
-        <article>
-            <h2>Lorem 3</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
-            </p>
-        </article>
-        <article>
-            <h2>Lorem 4</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
-            </p>
-        </article>
+        <section>
+
+
+        </section>
+        <section>
+            <article>
+                <h2>Lorem 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+                </p>
+            </article>
+            <article>
+                <h2>Lorem 2</h2>
+            <article> 
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+                </p>
+            </article>
+            <article>
+                <h2>Lorem 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+                </p>
+            </article>
+            <article>
+                <h2>Lorem 4</h2>
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+                    </p>
+            </article>
+        </section>
+        <section>
+            <h2>Artículos anidados</h2>
+            <article>
+                <h3>Lorem3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+                </p>
+                <article>
+                    <h4>Lorem4</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+                    </p>
+                </article>
+
+            </article>
+
+        </section>
+
+        <section>
+
+        </section>
+
     </main>
     <footer>
         <h2>Pié de página</h2>
     </footer>
-</body></html>
+</body>
+
+</html>
