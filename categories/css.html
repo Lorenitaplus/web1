@@ -30,7 +30,7 @@
         
         header h1 {
             /* La propiedad height establece el alto */
-            height: 50px;s
+            height: 50px;
             
             /* La propiedad padding es el relleno */
             padding: 8px;
@@ -44,6 +44,11 @@
             /* Ésto es un borde de un px, liso en color rojo */
             border: 1px solid red;
         }
+        
+        /* Ésto establece visibilidad en pantalla en ninguna */
+        nav h2 {
+            display: none;
+        }
 
         article {
             
@@ -55,9 +60,35 @@
             
             /* Ésto establece el margen de todos los article */
             margin: 3%;
+            /* Equivale a: */
+            /* margin: 3% 3% 3% 3% */
+            /* margin: 3% 3% */
+            /* margin-top: 3%; */
+            /* margin-right: 3%; */
+            /* margin-bottom: 3%; */
+            /* margin-left: 3%; */
             
             /* Ésto establece el borde de todos los article */
             border: 1x solid black;
+        }
+        
+        /* Ésto establece el ancho al 100% para todos los article */
+        /* herederos de otro article heredero de una section */
+        section article article {
+            width: 100%;   
+        }
+        
+        /* Esta declaración anula y sustituye a las anteriores */
+        section, article {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            /* Ésto es lo mismo */
+            margin: 3% 0;
+        }
+        
+        article article p {
+            background-color: lime;
         }
 
         article, article p, article h2 {
@@ -69,7 +100,7 @@
             background-color: white;
         }
 
-        footer h2 {
+        footer {
             
             /* Éto estable<e el alto del footer en 80 px */
             height: 80px;
@@ -82,11 +113,16 @@
             /* Ésto establece el relleno del footer en 10 px */
             padding: 10px;
             
-            /* 
+            /* Ésto establece que el texto del footer se alineé en el centro */
             text-align: center;
+            
+            /* Ésto establece el fondo del footer en negro */
             background-color: black;
+            
+            /* Ésto establece el color de texto del footer */
             color: white;
         }
+        
     </style>
 </head>
 
@@ -124,9 +160,9 @@
                     Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
                 </p>
             </article>
-            <article>
-                <h2>Lorem 2</h2>
             <article> 
+                <h2>Lorem 2</h2>
+          
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
@@ -144,28 +180,28 @@
                 </p>
             </article>
             <article>
-                <h2>Lorem 4</h2>
-                <article>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <p>
-                        Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
-                    </p>
-            </article>
-        </section>
-        <section>
-            <h2>Artículos anidados</h2>
-            <article>
-                <h3>Lorem3</h3>
+               <h2>Lorem 4</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <p>
                     Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
                 </p>
+            </article>
+        </section>
+        <section>
+            <h2>Artículos anidados</h2>
+            <article>
+                <h3>Anidado Lorem 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
+                </p>
+           
                 <article>
-                    <h4>Lorem4</h4>
+                    <h4>Anidado Anidado Lorem 2</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
@@ -173,9 +209,7 @@
                         Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Neque aliquam vestibulum morbi blandit cursus risus at. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
                     </p>
                 </article>
-
-            </article>
-
+             </article>    
         </section>
 
         <section>
