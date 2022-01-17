@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Selector Universal */
 * {
     margin: 0;
@@ -14,12 +16,81 @@
 
 h1,h2,h3,h4,h5,h6 {
     color: black;
-    font-family: 'Libre Baskerville', serif;
+    font-family:'Libre Baskerville', serif;
 }
 
-li, a, p {
-    color: dimgrey; 
+/*===================*/
+/* Formato de textos */
+/*===================*/
+
+/* Fon-family importada de Google Fonts */
+p, em, strong, li, a {
+    font-family:'Montserrat', sans-serif;   
+    color: dimgrey;
+    font-size: 16px;
 }
+
+/* Font-weight establece la anchura de la letra */
+a {font-weight: bold; 
+    color: steelblue;   
+}
+
+/* Establece el estilo de letra; por defecto ya viene en italic, redundante*/
+em {
+    font-style: italic;
+}
+
+/* Font-variant */
+.todomayusculas {
+  font-variant: small-caps
+}
+
+.pepe {
+    color: green;
+}
+
+.alineadoderecha {
+    text-align: right;
+}
+
+.alineadocentro {
+    text-align: center;
+}
+
+.alineadojustificado {
+    text-align: justify; 
+}
+
+/*===================*/
+/*Prioridades*/
+/*===================*/
+
+/*El selector de id es la almohadilla, y es el que más manda*/
+/*
+#violeta {color: violet;}
+article ol li {color: blue}
+*/
+
+#violeta {color: darkviolet}
+.rosa {color: pink;}
+li.rosa {color: pink;}
+article ol li.rosa {color:pink;}
+body main section article ol li.rosa {color:pink;}
+article ol li {color:blue}
+li {color: tomato;}
+
+/*Colores para una tabla .azul*/
+/* bordes de tabla en azul y fondo en azul; fondo  de cabecera en azul y letra en blanco*/
+table.azul th 
+table.azul td {
+    border: 1px solid blue;
+    color: blue;
+}
+table.azul thead th {
+    background-color: blue;
+    color: white;
+}
+
 
 header h1 {
     /* La propiedad height establece el alto */
