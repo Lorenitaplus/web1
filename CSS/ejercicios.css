@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+article.ej2 #titulo {
+    color: teal;
+}
+
+/* Para resumir podemos agrupar las partes del mismo color en una declaración*/
+article.ej2 #subtitulo, article.ej2 p em, article.ej2 table caption {
+    color: blue;
+}
+
+article.ej2 p strong, article.ej2 a {
+    color: red;
+}
+/*Para resumir podemos agrupar las partes del mismo color en una declaración*/
+
+article.ej2 .destacado {
+    color: orange;
+}
+
+article.ej2 span.especial {
+    color: purple;
+}
+
+article.ej2 th,
+article.ej2 td {
+    border: 1px solid black;
+}
+
+article.ej2 .especial {
+    color: orange;
+}
+
+article.ej2 td {
+    color: green;
+}
+
+article.ej2 td strong {
+    color: orange;
+}
+
+article.ej2 th {
+    color: red;
+}
+
+article.ej2 #adicional {
+    color: olive;
+}
+
+article.ej2 #especial {
+    color: fuchsia;
+}
+
+article.ej2 div a {
+    color: green;
+}
