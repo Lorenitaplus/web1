@@ -56,5 +56,7 @@ article.ej2 div a {
 }
 
 ul.galeria li {
-    background: lime;
+   /* background: lime;*/
+    list-style: none;
+    display: inline-block;
 }
